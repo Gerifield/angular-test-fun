@@ -9,10 +9,17 @@
 <body>
 <p>Hello {{ 1 + 1 }}</p>
 
-<ul ng-controller="TestRepeatCtrl">
-	<li ng-repeat="item in items">
-		<b>{{item.name}}</b>{{item.description}}
-	</li>
-</ul>
+
+<div ng-controller="TestRepeatCtrl">
+	Items: {{items.length}}
+	<ul>
+		<li ng-repeat="item in items">
+			<b>{{item.name}}</b>
+			<br />
+			{{item.description}}
+		</li>
+	</ul>
+</div>
+
 </body>
 </html>
