@@ -16,3 +16,10 @@ app.directive('myDir', function(){
 		template: '<b>{{item.name}}</b><br>{{item.description}}'
 	};
 });
+
+app.directive('myDir2', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'kulso_tempalte.html'
+	};
+});

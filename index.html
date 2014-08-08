@@ -5,6 +5,11 @@
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
+
+
+	<script type="text/ng-template" id="kulso_tempalte.html">
+	<b>{{item.name}}</b> - <i>{{item.description}}</i>
+	</script>
 </head>
 <body>
 <p>Hello {{ 1 + 1 }}</p>
@@ -15,9 +20,10 @@
 	Items: {{items.length}}
 	<ul>
 		<li ng-repeat="item in items | orderBy:'id':reverseOrder">
-			<my_dir></my_dir>
+			<!--<my_dir></my_dir>
 			<my-dir></my-dir>
-			<my:dir></my:dir>
+			<my:dir></my:dir>-->
+			<my-dir2></my-dir2>
 		</li>
 	</ul>
 </div>
