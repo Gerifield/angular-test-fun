@@ -11,12 +11,13 @@
 
 
 <div ng-controller="TestRepeatCtrl">
+<button ng-click="reverseOrder = !reverseOrder">Reverse</button>
 	Items: {{items.length}}
 	<ul>
-		<li ng-repeat="item in items | orderBy:'id'">
-			<b>{{item.name}}</b>
-			<br />
-			{{item.description}}
+		<li ng-repeat="item in items | orderBy:'id':reverseOrder">
+			<my_dir></my_dir>
+			<my-dir></my-dir>
+			<my:dir></my:dir>
 		</li>
 	</ul>
 </div>
