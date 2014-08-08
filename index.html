@@ -13,7 +13,7 @@
 <div ng-controller="TestRepeatCtrl">
 	Items: {{items.length}}
 	<ul>
-		<li ng-repeat="item in items">
+		<li ng-repeat="item in items | orderBy:'id'">
 			<b>{{item.name}}</b>
 			<br />
 			{{item.description}}
